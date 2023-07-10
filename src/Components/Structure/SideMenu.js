@@ -24,7 +24,7 @@ const SideMenu = () => {
                     {isMenuShown ?
                         <tbody>
                             <tr>
-                                <td><Link to="home"><img alt="None" src={HomeIcon} style={{width:40, height:40, marginLeft: 30,marginRight:5, marginTop:20}}></img><span>Incio</span></Link></td>
+                                <td><Link to="home"><img alt="None" src={HomeIcon} style={{width:40, height:40, marginLeft: 30,marginRight:5, marginTop:20}}></img><span>Inicio</span></Link></td>
                             </tr>
                             <tr>
                                 <td><Link to="empleados"><img  alt="None" src={EmpleadoIcon} style={{width:40, height:40, marginLeft: 30,marginRight:5, marginTop:20}}></img><span>Empleados</span></Link></td>

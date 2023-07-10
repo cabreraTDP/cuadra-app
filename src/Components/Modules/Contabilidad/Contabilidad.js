@@ -237,25 +237,24 @@ const Contabilidad = () => {
         <div style={{ width: '100%' }}></div>
         <div id="opciones">
           <div id="opcion">
-            <img alt="None" src={PlusIcon} onClick={CrearNuevoRegistro} style={{ marginLeft: 5, width:35,height:35}}>
+            <img alt="None" src={PlusIcon} onClick={CrearNuevoRegistro} style={{ margin:"auto", width:35,height:35}}>
             </img>
             <div onClick={CrearNuevoRegistro} >Añadir Registro</div>
           </div>
           <div id="opcion">
-            <img  alt="None" src={UploadIcon} onClick={AgregarArchivoSAT} style={{ marginLeft: 30, width:35,height:35}}></img>
+            <img  alt="None" src={UploadIcon} onClick={AgregarArchivoSAT} style={{ margin:"auto", width:35,height:35}}></img>
             <div onClick={AgregarArchivoSAT}>Subir pdf sat</div>
           </div>
           <div id="opcion">
+            <img alt="None" src={AnalysisIcon} style={{margin:"auto",width:35,height:35}}></img>
             <Link
               to="analisis"
-              style={{ textDecoration: 'none'}}
-            >
-              <img alt="None" src={AnalysisIcon} style={{width:35,height:35}}></img>
+              style={{ textDecoration: 'none'}}>
               <div id="opcion">Análisis</div>
             </Link>
           </div>
           <div id="opcion">
-            <img onClick={() => exportarExcel()} alt="None" src={DownloadIcon} style={{ marginLeft: 35,width:35,height:35}}></img>
+            <img onClick={() => exportarExcel()} alt="None" src={DownloadIcon} style={{ margin:"auto",width:35,height:35}}></img>
             <div onClick={() => exportarExcel()}>Exportar a Excel</div>
           </div>
         </div>
@@ -458,8 +457,8 @@ const Contabilidad = () => {
           />
 
           <Buttom  type="submit" title='Actualizar Registro' style={{ marginTop: 10, width: '100%' }} />
-          <Buttom
-            style={{ marginTop: 10, width: '100%', backgroundColor: 'red' }}
+          <Buttom type="submit" title='Borrar Registro'
+                  style={{ marginTop: 10, width: '100%', backgroundColor: 'red' }}
             onClick={() => onDeleteOperacion(registroEnEdicion._id)}
           />
         </form>

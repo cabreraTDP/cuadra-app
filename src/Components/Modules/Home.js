@@ -120,10 +120,10 @@ const Home = () => {
   return (
     <div>
       <div style={{ width: '45%', height: '350px', float:'left', marginTop: '50px', marginRight: '100px' }}>
-        <Line options={options} data={datos} />;
+        <Line options={options} data={datos} />
       </div>
       <div style={{ width: '45%', height: '350px', float:'left', marginTop: '50px' }}>
-        <Bar options={options} data={datos} />;
+        <Bar options={options} data={datos} />
       </div>
     </div>
   )

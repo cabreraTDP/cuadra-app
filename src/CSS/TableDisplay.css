@@ -35,6 +35,11 @@
     text-align: center;
 }
 
+.Table > tbody > tr > td > a{
+    text-decoration: none;
+    color:blue;
+}
+
 .Table > thead > tr > th {
     height: 30px;
     padding-bottom: 10px;
